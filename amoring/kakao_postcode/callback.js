@@ -15,6 +15,7 @@ function onReceivedActivityMessageViaJavascriptInterface(json) {
 
 function sendMessageToAndroid(postData) {
   try{
+    console.log("send to Android: "+postData)
     Android.onSelect(postData);
   }catch(e){
     console.log("Callback Android.onSelect() not found")
@@ -40,7 +41,6 @@ function buildPostData(data){
     bname: data.bname,
     zonecode: data.zonecode
   };
-  console.log("postData: "+JSON.stringify(postData));
   return JSON.stringify(postData);
 }
 
