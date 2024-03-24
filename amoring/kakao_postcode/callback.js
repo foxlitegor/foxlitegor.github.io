@@ -41,7 +41,7 @@ function buildPostData(data){
     zonecode: data.zonecode
   };
   console.log("postData: "+JSON.stringify(postData));
-  return JSON.stringify(data);
+  return JSON.stringify(postData);
 }
 
 var element_layer = document.getElementById("layer");
