@@ -15,7 +15,7 @@ function onReceivedActivityMessageViaJavascriptInterface(json) {
 
 function sendMessageToAndroid(postData) {
   try{
-    Android.onSelect(JSON.stringify(postData));
+    Android.onSelect(postData);
   }catch(e){
     console.log("Callback Android.onSelect() not found")
   }
